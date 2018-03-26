@@ -1,0 +1,14 @@
+body{
+    font-size: 12px;
+    background: #ececec;
+}
+
+
+.fade-enter-active, .fade-leave-active {
+    transition: all .2s ease-in-out;
+
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+    transform: translateY(10px);
+  }
