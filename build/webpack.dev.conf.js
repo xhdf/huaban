@@ -12,7 +12,7 @@ const portfinder = require('portfinder')
 
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
-const appData = require('../dist/api/all.json')
+const appData = require('../dist/api/data.json')
 
 const devWebpackConfig = merge(baseWebpackConfig, {
   module: {
