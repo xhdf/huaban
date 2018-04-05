@@ -99,7 +99,7 @@ export default {
         }
     },
     created() {
-        axios.get('/api/all')
+        axios.get('/api/all.json')
             .then(response => {
                 console.log(response.data.pins)
                 this.data = response.data.pins
