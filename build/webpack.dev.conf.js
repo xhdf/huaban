@@ -12,7 +12,7 @@ const portfinder = require('portfinder')
 
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
-const appData = require('../dist/api/data.json')
+const appData = require('../api/data.json')
 
 const devWebpackConfig = merge(baseWebpackConfig, {
   module: {
@@ -26,7 +26,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   // these devServer options should be customized in /config/index.js
   devServer: {
       before(app){
-        app.get('/api/all.json',function(req,res){
+        app.get('/api/data.json',function(req,res){
             res.json(appData)
         })
       },

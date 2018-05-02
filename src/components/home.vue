@@ -34,7 +34,7 @@ export default {
         }
     },
     created() {
-        axios.get('/api/all.json')
+        axios.get('/api/data.json')
             .then(response => {
                 console.log(response)
                 console.log(response.data.pins)
