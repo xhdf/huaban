@@ -1,2 +1,2 @@
 # huaban
-vue
+https://xhdf.github.io/huaban/
