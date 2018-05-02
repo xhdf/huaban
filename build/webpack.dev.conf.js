@@ -26,7 +26,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   // these devServer options should be customized in /config/index.js
   devServer: {
       before(app){
-        app.get('/api/data.json',function(req,res){
+        app.get('/huaban/api/data.json',function(req,res){
             res.json(appData)
         })
       },

@@ -48,58 +48,58 @@
 <script>
 import axios from 'axios'
 import Vue from 'vue'
-//img.hb.aicdn.com/
+// img.hb.aicdn.com/
 export default {
     data() {
         return {
             data: [],
-            label:[{
-                img:'http://img.hb.aicdn.com/fc0a42c6d2e7f638485a392bf3cc40ebf7ec74c9c361-gQgaiR_sq320',
-                text:'摄影'
-            },{
-                 img:'http://img.hb.aicdn.com/3ef794c7003edbc489e7b6eae0dc91503259225c7934-1MjcjY_sq320',
-                text:'生活百科'
-            },{
-                 img:'http://img.hb.aicdn.com/719237151f8cd217033876e1fa8c1e7dc16b393b5df2-Etzexv_sq320',
-                text:'礼物'
-            },{
-                 img:'http://img.hb.aicdn.com/1a99aa11700f7ed01d51914c9061e5cd3ce5632c13b15-gJCMyX_sq320',
-                text:'甜品'
-            },{
-                 img:'http://img.hb.aicdn.com/436a73eaa52e84f239fc591a96b07896f48e625290d1-osC5Lg_sq320',
-                text:'旅行'
+            label: [{
+                img: 'http://img.hb.aicdn.com/fc0a42c6d2e7f638485a392bf3cc40ebf7ec74c9c361-gQgaiR_sq320',
+                text: '摄影'
+            }, {
+                img: 'http://img.hb.aicdn.com/3ef794c7003edbc489e7b6eae0dc91503259225c7934-1MjcjY_sq320',
+                text: '生活百科'
+            }, {
+                img: 'http://img.hb.aicdn.com/719237151f8cd217033876e1fa8c1e7dc16b393b5df2-Etzexv_sq320',
+                text: '礼物'
+            }, {
+                img: 'http://img.hb.aicdn.com/1a99aa11700f7ed01d51914c9061e5cd3ce5632c13b15-gJCMyX_sq320',
+                text: '甜品'
+            }, {
+                img: 'http://img.hb.aicdn.com/436a73eaa52e84f239fc591a96b07896f48e625290d1-osC5Lg_sq320',
+                text: '旅行'
             }],
-            selection:[{
-                img:'http://img.hb.aicdn.com/5cb2997c40bad1f589b3afc75f751581cc641983162f1-QfxSUK_fw658',
-            },{
-                 img:'http://img.hb.aicdn.com/71c38dc329227639e09298fdbbcf587200aa7efbb6d23-JKpUi3_fw658',
-            },{
-                 img:'http://img.hb.aicdn.com/dce540633158264629cf05bbc342303b0174246335c91-ptq7gV_fw658',
-            },{
-                 img:'http://img.hb.aicdn.com/65f2c5f940f5dd440ff954215049bf538bfe2c22bbd6-yBcO0f_fw658',
-            },{
-                 img:'http://img.hb.aicdn.com/061630835565d6559be2ba3542f15e973daaf4111555d-OgLjzY_fw658',
+            selection: [{
+                img: 'http://img.hb.aicdn.com/5cb2997c40bad1f589b3afc75f751581cc641983162f1-QfxSUK_fw658'
+            }, {
+                img: 'http://img.hb.aicdn.com/71c38dc329227639e09298fdbbcf587200aa7efbb6d23-JKpUi3_fw658'
+            }, {
+                img: 'http://img.hb.aicdn.com/dce540633158264629cf05bbc342303b0174246335c91-ptq7gV_fw658'
+            }, {
+                img: 'http://img.hb.aicdn.com/65f2c5f940f5dd440ff954215049bf538bfe2c22bbd6-yBcO0f_fw658'
+            }, {
+                img: 'http://img.hb.aicdn.com/061630835565d6559be2ba3542f15e973daaf4111555d-OgLjzY_fw658'
             }],
-            interst:[{
-                img:'http://img.hb.aicdn.com/69f9bfe82105214a63fb6fa968fe56965434f4e01bbe7-ZNDENK_fw658',
-                text:'草莓'
-            },{
-                 img:'http://img.hb.aicdn.com/87173a33921d655ea1d79f2acc4f340402682a3498cc-1WNGx5_fw658',
-                text:'衍纸'
-            },{
-                 img:'http://img.hb.aicdn.com/8fefa9fab7ac7b849767d11c474d0d8ab13218b21c292-9ctlKn_sq320',
-                text:'节气'
-            },{
-                 img:'http://img.hb.aicdn.com/1c98e5290413ec645ac063969735ff1fae1e6b6eace1-Lwd8c5_sq320',
-                text:'家居'
-            },{
-                 img:'http://img.hb.aicdn.com/3ef794c7003edbc489e7b6eae0dc91503259225c7934-1MjcjY_sq320',
-                text:'宠物'
-            }],
+            interst: [{
+                img: 'http://img.hb.aicdn.com/69f9bfe82105214a63fb6fa968fe56965434f4e01bbe7-ZNDENK_fw658',
+                text: '草莓'
+            }, {
+                img: 'http://img.hb.aicdn.com/87173a33921d655ea1d79f2acc4f340402682a3498cc-1WNGx5_fw658',
+                text: '衍纸'
+            }, {
+                img: 'http://img.hb.aicdn.com/8fefa9fab7ac7b849767d11c474d0d8ab13218b21c292-9ctlKn_sq320',
+                text: '节气'
+            }, {
+                img: 'http://img.hb.aicdn.com/1c98e5290413ec645ac063969735ff1fae1e6b6eace1-Lwd8c5_sq320',
+                text: '家居'
+            }, {
+                img: 'http://img.hb.aicdn.com/3ef794c7003edbc489e7b6eae0dc91503259225c7934-1MjcjY_sq320',
+                text: '宠物'
+            }]
         }
     },
     created() {
-        axios.get('/api/data.json')
+        axios.get('/huaban/api/data.json')
             .then(response => {
                 console.log(response.data.pins)
                 this.data = response.data.pins
@@ -108,7 +108,7 @@ export default {
     methods: {
         gotolink(link) {
             window.open(link)
-        },
+        }
 
     }
 }
@@ -157,7 +157,6 @@ export default {
       border-radius: 10px;
       color: #fff;
       background: red;
-
 
     }
     .name {

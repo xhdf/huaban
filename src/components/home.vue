@@ -26,15 +26,15 @@
 </template>
 <script>
 import axios from 'axios'
-//img.hb.aicdn.com/
+// img.hb.aicdn.com/
 export default {
     data() {
         return {
-            data: [],
+            data: []
         }
     },
     created() {
-        axios.get('/api/data.json')
+        axios.get('/huaban/api/data.json')
             .then(response => {
                 console.log(response)
                 console.log(response.data.pins)
@@ -45,12 +45,11 @@ export default {
         gotolink(link) {
             window.open(link)
         },
-        gotosearch(){
-             this.$router.push('/search')
+        gotosearch() {
+            this.$router.push('/search')
         }
     }
 }
-
 
 </script>
 
