@@ -11,11 +11,11 @@
                 v-for="item in data">
                 <div class="img"
                     @click="gotolink(item.link)">
-                    <img :src="'//img.hb.aicdn.com/'+item.file.key"    alt=""></div>
+                    <img :src="'http://img.hb.aicdn.com/'+item.file.key"    alt=""></div>
                 <div class="msg">
                     <div class="title">{{item.board.title}}</div>
                     <div class="user">
-                        <div class="head"><img :src="'//img.hb.aicdn.com/'+item.user.avatar.key"
+                        <div class="head"><img :src="'http://img.hb.aicdn.com/'+item.user.avatar.key"
                                 alt=""></div>
                         <div class="name">{{item.user.username}}</div>
                     </div>

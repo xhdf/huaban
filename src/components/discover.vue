@@ -35,7 +35,7 @@
             <div class="item"
                 v-for="item in data">
                 <div class="img"
-                    @click="gotolink(item.link)"><img :src="'//img.hb.aicdn.com/'+item.file.key"
+                    @click="gotolink(item.link)"><img :src="'http://img.hb.aicdn.com/'+item.file.key"
                         alt=""></div>
                 <div class="msg">
                     <div class="msg-title">{{item.board.title}}</div>
